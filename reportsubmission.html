@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="logo.png"/>
+  <link rel="stylesheet" href="reportsubmission.css">
+  <title>Submit Anomaly Report</title>
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <div class="form-container">
+    <h2 class="header-title">
+  <img src="logo.png" alt="Bowen Logo" class="logo-icon">
+  Report Anomaly
+</h2>
+
+    <form>
+      <label for="image">Upload Image</label>
+      <input type="file" id="image" accept="image/*" required>
+
+      <label for="description">Problem Description</label>
+      <textarea id="description" placeholder="Describe the issue in detail..." required></textarea>
+
+      <label for="category">Category</label>
+      <select id="category" required>
+        <option value="">-- Select Category --</option>
+        <option value="electrical">Electrical</option>
+        <option value="plumbing">Plumbing</option>
+        <option value="furniture">Furniture</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="location">Location</label>
+      <input type="text" id="location" placeholder="E.g., Room 203, Admin Block" required>
+
+      <div class="anon-option">
+        <input type="checkbox" id="anonymous">
+        <label for="anonymous">Submit anonymously</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Report</button>
+      <!-- <p class="info-text">Your report will be reviewed by the maintenance team shortly.</p> -->
+    </form>
+  </div>
+</body>
+</html>

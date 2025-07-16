@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="logo.png"/>
+  <link rel="stylesheet" href="login.css">
+  <title>Login / Sign-Up</title>
+</head>
+<body>
+  <div class="login-container">
+    <form class="login-box">
+      <h2>Anomaly Reporting System</h2>
+      <p>Welcome! Log in or continue as guest to report issues.</p>
+
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+
+      <select required>
+        <option value="">-- Select Role --</option>
+        <option value="student">Student</option>
+        <option value="staff">Teaching</option>
+        <option value="staff">Non-Teaching Staff</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <button type="submit" class="login-btn">Login</button>
+      <a href="reportsubmission.html"><button type="button" class="guest-btn">Continue as Guest</button></a>
+      <!-- <button type="button" class="anon-btn">Report Anonymously</button> -->
+      <!-- <button type="button" class="admin-btn">Admin Login</button> -->
+
+      <div class="links">
+        <a href="#">Forgot Password?</a> | <a href="#">Create Account</a>
+      </div>
+
+      <footer>
+        © Bowen University's Anomaly Reporting System - Maintenance Department
+      </footer>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="logo.png"/>
+  <link rel="stylesheet" href="admin.css">
+  <title>Admin Dashboard - Anomaly Reports</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <h1 class="dashboard-header">
+  <img
+    src="logo.png"
+    alt="Bowen University Logo"
+    class="logo-icon"
+  />
+  <span>Admin Dashboard - Anomaly Reports</span>
+</h1>
+
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Location</th>
+          <th>Submitted By</th>
+          <th>Status</th>
+          <th>Priority</th>
+          <th>Timestamp</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="sample1.jpg" alt="Report Image" class="img-thumb"></td>
+          <td>Broken light fixture in hallway</td>
+          <td>Electrical</td>
+          <td>Block A, Floor 2</td>
+          <td>student@email.com</td>
+          <td><span class="status received">Received</span></td>
+          <td>
+            <select class="priority">
+              <option>Low</option>
+              <option selected>Medium</option>
+              <option>High</option>
+            </select>
+          </td>
+          <td>2025-07-12 10:34 AM</td>
+        </tr>
+        <tr>
+          <td><img src="sample2.jpg" alt="Report Image" class="img-thumb"></td>
+          <td>Leaking tap in restroom</td>
+          <td>Plumbing</td>
+          <td>Main Hall Bathroom</td>
+          <td>Anonymous</td>
+          <td><span class="status progress">In Progress</span></td>
+          <td>
+            <select class="priority">
+              <option>Low</option>
+              <option>Medium</option>
+              <option selected>High</option>
+            </select>
+          </td>
+          <td>2025-07-11 3:17 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

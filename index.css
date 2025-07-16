@@ -1,0 +1,88 @@
+:root {
+      --primary: #1f51bb;
+      --accent: #10B981;
+      --bg: #F9FAFB;
+      --text-dark: #1F2937;
+      --text-muted: #6B7280;
+      --btn-admin: #6b7280;
+      --btn-hover-admin: #4b5563;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: linear-gradient(to bottom right, rgba(175, 195, 240, 0.5), rgba(16,185,129,0.5)), url('https://bowen.edu.ng/wp-content/uploads/2021/10/Bowen3-e1634588221166.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+    }
+    .hero-content img.logo {
+      width: 100px;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    }
+    .hero-content p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    }
+    .cta-buttons a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 14px 28px;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s, background 0.3s;
+    }
+    .btn-report { background: var(--primary); }
+    .btn-status { background: var(--accent); }
+    .btn-admin { background: var(--btn-admin); }
+    .btn-report:hover { background: #1E40AF; transform: translateY(-2px); }
+    .btn-status:hover { background: #059669; transform: translateY(-2px); }
+    .btn-admin:hover { background: var(--btn-hover-admin); transform: translateY(-2px); }
+
+    footer {
+      padding: 20px;
+      background: #ffffff;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      border-top: 1px solid #E5E7EB;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
